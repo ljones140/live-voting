@@ -18,7 +18,7 @@ module QuestionHelper
   def total_votes(question)
     vote_count = 0
     question.choices.each do |choice|
-      vote_count += choice.votes.count
+      vote_count += choice.votes.size
     end
     vote_count
   end
