@@ -1,5 +1,5 @@
 class QuestionsController < ApplicationController
-
+  
   before_action :check_if_question_owner, only: [:show, :destroy, :edit, :update]
   before_action :check_if_event_owner, only: [:new]
 
@@ -96,5 +96,5 @@ class QuestionsController < ApplicationController
   def question_params
     params.require(:question).permit(:content, choices_attributes:[:content])
   end
-  
+
 end

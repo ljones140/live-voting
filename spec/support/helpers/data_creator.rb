@@ -38,7 +38,6 @@ module DataHelpers
 
 end
 
-
 RSpec.configure do |config|
   config.include(DataHelpers)
 end
