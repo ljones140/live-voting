@@ -1,4 +1,5 @@
 class ChoicesController < ApplicationController
+
   before_action :check_if_choice_owner, only: [:new, :create]
 
   def new
@@ -25,7 +26,6 @@ class ChoicesController < ApplicationController
     flash[:notice] = "Choice successfully deleted"
   end
 
-
   private
 
   def find_question
@@ -46,4 +46,5 @@ class ChoicesController < ApplicationController
   def choices_params
     params.require(:choice).permit(:content)
   end
+  
 end

@@ -1,5 +1,6 @@
 class EventsController < ApplicationController
-  before_action :authenticate_user!, :except => [:index, :show, :vote, :parse_event_id]
+
+  before_action :authenticate_user!, except: [:index, :show, :vote, :parse_event_id]
   before_action :check_if_event_owner, only: [:show, :destroy, :edit, :update]
 
   def index
@@ -95,4 +96,5 @@ class EventsController < ApplicationController
   def event_params
     params.require(:event).permit(:title, :description)
   end
+  
 end

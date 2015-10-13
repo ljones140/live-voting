@@ -27,4 +27,5 @@ module QuestionHelper
     COLOUR_ARRAY.rotate!
     COLOUR_ARRAY[0]
   end
+
 end
