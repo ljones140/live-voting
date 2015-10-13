@@ -30,7 +30,6 @@ class EventsController < ApplicationController
     @event = find_event
   end
 
-
   def destroy
     find_event.destroy
     redirect_to events_path
@@ -79,7 +78,6 @@ class EventsController < ApplicationController
     code
   end
 
-
   private
 
   def find_event
@@ -96,5 +94,5 @@ class EventsController < ApplicationController
   def event_params
     params.require(:event).permit(:title, :description)
   end
-  
+
 end
