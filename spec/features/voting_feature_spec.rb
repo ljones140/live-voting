@@ -1,7 +1,6 @@
 require 'rails_helper'
 
 feature 'Voting Features' do
-  # let(:event){ create :event, user: create(:user) }
 
   context 'when not signed in' do
 

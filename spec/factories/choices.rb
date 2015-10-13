@@ -1,4 +1,5 @@
 FactoryGirl.define do
+
   factory :choice do
     content "Yes"
 
@@ -9,6 +10,6 @@ FactoryGirl.define do
     factory :choice_3 do
       content "Maybe"
     end
-
   end
+
 end
